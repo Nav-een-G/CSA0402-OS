@@ -75,7 +75,7 @@ On Windows, run the generated `.exe` files.
 - Implementing Operating System concepts using C.
 
 ## Author
-Operating Systems Student
+Naveen 
 
 ## Conclusion
 This repository demonstrates basic Operating Systems concepts through simple C programs. It helps understand file allocation and disk scheduling techniques through practical implementation.
