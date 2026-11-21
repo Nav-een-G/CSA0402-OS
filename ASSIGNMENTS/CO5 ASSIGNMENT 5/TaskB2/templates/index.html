@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>University Result Portal</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<script src="{{ url_for('static',filename='script.js') }}" defer></script></head>
+<body><header><div class="logo">UR</div><div><small>STUDENT SERVICES</small><h1>University Result Portal</h1></div><span class="pill">● Demo system</span></header>
+<main><section class="hero"><div><small>SEMESTER EXAMINATION RESULTS</small><h2>Your academic progress,<br><em>all in one place.</em></h2>
+<p>Enter your register number to view a sample semester result.</p></div><div class="card"><label for="registerNo">Register number</label>
+<div class="row"><input id="registerNo" placeholder="e.g. STU1001" maxlength="20"><button id="searchButton">View result →</button></div>
+<small>Demo IDs: STU1001, STU1002, STU1003, STU1004</small><p id="message" role="status"></p></div></section>
+<section id="resultPanel" class="result hidden"><div class="resulthead"><div><small>RESULT SUMMARY</small><h2 id="studentName"></h2></div><b id="resultStatus"></b></div>
+<div class="grid"><div>Register number<strong id="studentReg"></strong></div><div>Programme<strong id="programme"></strong></div><div>Semester<strong id="semester"></strong></div><div>Percentage<strong id="percentage"></strong></div></div></section>
+<section class="features"><article><b>01</b><h3>Search securely</h3><p>Find a sample result using the Flask API.</p></article><article><b>02</b><h3>Database-backed</h3><p>Demo records are stored in PostgreSQL.</p></article><article><b>03</b><h3>Container-ready</h3><p>Health endpoint supports deployment checks.</p></article></section></main>
+<footer>Operating Systems CO5 · Linux, Docker and Kubernetes demonstration</footer></body></html>

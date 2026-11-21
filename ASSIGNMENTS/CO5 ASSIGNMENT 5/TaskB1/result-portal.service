@@ -1,0 +1,14 @@
+[Unit]
+Description=University Result Portal
+After=network.target
+[Service]
+Type=simple
+User=portal
+Group=portal
+WorkingDirectory=/opt/result-portal
+EnvironmentFile=/etc/result-portal/result-portal.env
+ExecStart=/opt/result-portal/.venv/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 app:app
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

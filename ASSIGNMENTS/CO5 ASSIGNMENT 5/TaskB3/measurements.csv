@@ -1,0 +1,10 @@
+deployment,startup_seconds,memory_MiB,disk_or_image_MiB,requests_per_second,p95_latency_ms,run,notes
+bare-metal,,,,,,1,Enter actual measured result
+bare-metal,,,,,,2,Enter actual measured result
+bare-metal,,,,,,3,Enter actual measured result
+virtual-machine,,,,,,1,Enter actual measured result
+virtual-machine,,,,,,2,Enter actual measured result
+virtual-machine,,,,,,3,Enter actual measured result
+container,,,,,,1,Enter actual measured result
+container,,,,,,2,Enter actual measured result
+container,,,,,,3,Enter actual measured result

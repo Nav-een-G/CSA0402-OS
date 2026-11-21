@@ -1,0 +1,13 @@
+services:
+  lms-demo:
+    image: nginx:alpine
+    ports: ["8081:80"]
+    cpus: "0.50"
+    mem_limit: 128m
+    restart: unless-stopped
+  exam-demo:
+    image: nginx:alpine
+    ports: ["8082:80"]
+    cpus: "0.50"
+    mem_limit: 128m
+    restart: unless-stopped
